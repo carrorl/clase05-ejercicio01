@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>FAQ</title>
+</head>
+<body>
+<ul>
+    <li>
+        ¿Cuánto tiempo hay que esperar para recibir los productos?
+        <p>Alrededor de 20 días hábiles</p>
+    </li>
+    <li>
+        ¿Cuáles son los medios de pago permitidos?
+        <p>Todos los medios de pagos, incluidas billeteras virtuales y trasnferencias</p>
+    </li>
+    <li>
+        ¿Los productos tienen garantía?
+        <p>Todos los productos tienen una garantía de seis meses</p>
+    </li>
+    <li>
+        ¿Cuales son los productos más pedidos?
+        <p>Los siguientes productos son los productos más pedidos</p>
+        <ul>
+            <% products.forEach(products => { %>
+                <li>
+                    <a href="/productos/<%= products.id %>">
+                        <%= products.name %>
+                    </a>
+                </li>
+            <% }) %>
+        </ul>
+    </li>
+</ul>
+<a href="/">Volver</a>
+</body>
+</html>

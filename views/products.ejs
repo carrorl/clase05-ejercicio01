@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title><%= product.name %></title>
+</head>
+<body>
+    <h1> <%= product.name %> </h1>
+    <h2> Detalles del producto </h2>
+    <ul>
+        <li>
+            Características: <%= product.description %>
+        </li>
+        <li>
+            Precio: <%= product.price %>
+        </li>
+        <li>
+            <img src="/images/<%= product.name %>.jpg" alt="">
+        </li>
+    </ul>
+    <a href="/productos/">
+        Volver
+    </a>
+</body>
+</html>

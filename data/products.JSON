@@ -1,0 +1,20 @@
+[
+{
+    "id": "1",
+    "name": "TV",
+    "description": "Televisor OLED 42", 
+    "price": "$ 2.300.000" 
+},
+{
+    "id": "2",
+    "name": "Licuadora",
+    "description": "Licuadora Liliana", 
+    "price": "$ 80.000" 
+ },
+{
+    "id": "3",
+    "name": "Celular",
+    "description": "Celular Xiaomi Red Note", 
+    "price": "$ 800.000" 
+}
+]
